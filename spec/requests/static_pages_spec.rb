@@ -1,66 +1,39 @@
 require 'spec_helper'
 
+
 describe "Static Pages Tests: " do
 
-	let(:base_title) { "SubConTraX |" }
+	let(:app_name) { "SubConTraX" }
+  subject {page}
 
 
 
   describe "Home Page" do
+    before {visit root_path}
 
-    it "should have the h1 'SubConTraX'" do
-      visit root_path
-      page.should have_selector('h1', :text => 'SubConTraX')
-    end
-
-    it "should have the right title" do
-      visit root_path
-      page.should have_selector('title',
-                        :text =>  "#{base_title} Home")
-    end
-
+    it { should have_selector('h1', text: 'SubConTraX') }
+    it { should have_selector('title', text: full_title('Home')) }
   end
 
-  describe "Help Page" do
+  describe "Help page" do
+    before { visit help_path }
 
-    it "should have the h1 'SubConTraX Help'" do
-      visit help_path
-      page.should have_selector('h1', :text => 'SubConTraX Help')
-    end
-
-   it "should have the right title" do
-      visit help_path
-      page.should have_selector('title',
-                        :text => "#{base_title} Help")
-    end
+    it { should have_selector('h1',    text: 'Help') }
+    it { should have_selector('title', text: full_title('Help')) }
   end
 
   describe "About page" do
+    before { visit about_path }
 
-    it "should have the h1 'SubConTraX About Us'" do
-      visit about_path
-      page.should have_selector('h1', :text => 'SubConTraX About Us')
-    end
-
-   it "should have the right title" do
-      visit about_path
-      page.should have_selector('title',
-                        :text => "#{base_title} About Us")
-    end
+    it { should have_selector('h1',    text: 'About') }
+    it { should have_selector('title', text: full_title('About Us')) }
   end
 
- describe "Contact Us page" do
+  describe "Contact page" do
+    before { visit contact_path }
 
-    it "should have the h1 'SubConTraX Contact Us'" do
-      visit contact_path
-      page.should have_selector('h1', :text => 'SubConTraX Contact Us')
-    end
-
-   it "should have the right title" do
-      visit contact_path
-      page.should have_selector('title',
-                        :text => "#{base_title} Contact Us")
-    end
+    it { should have_selector('h1',    text: 'Contact') }
+    it { should have_selector('title', text: full_title('Contact')) }
   end
 
 end
