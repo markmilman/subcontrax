@@ -5,9 +5,7 @@ describe "Static Pages Tests: " do
 
 	let(:app_name) { "SubConTraX" }
   subject {page}
-
-
-
+# chapter6 comment
   describe "Home Page" do
     before {visit root_path}
 
