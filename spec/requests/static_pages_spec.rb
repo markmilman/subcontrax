@@ -9,31 +9,27 @@ describe "Static Pages Tests: " do
   describe "Home Page" do
 
     it "should have the h1 'SubConTraX'" do
-      visit '/static_pages/home'
+      visit root_path
       page.should have_selector('h1', :text => 'SubConTraX')
     end
 
     it "should have the right title" do
-      visit '/static_pages/home'
+      visit root_path
       page.should have_selector('title',
-                        :text =>  "#{base_title}")
+                        :text =>  "#{base_title} Home")
     end
 
-    it "should not have a custom page title" do
-      visit '/static_pages/home'
-      page.should_not have_selector('title', :text => '| Home')
-    end
   end
 
   describe "Help Page" do
 
     it "should have the h1 'SubConTraX Help'" do
-      visit '/static_pages/help'
+      visit help_path
       page.should have_selector('h1', :text => 'SubConTraX Help')
     end
 
    it "should have the right title" do
-      visit '/static_pages/help'
+      visit help_path
       page.should have_selector('title',
                         :text => "#{base_title} Help")
     end
@@ -42,12 +38,12 @@ describe "Static Pages Tests: " do
   describe "About page" do
 
     it "should have the h1 'SubConTraX About Us'" do
-      visit '/static_pages/about'
+      visit about_path
       page.should have_selector('h1', :text => 'SubConTraX About Us')
     end
 
    it "should have the right title" do
-      visit '/static_pages/about'
+      visit about_path
       page.should have_selector('title',
                         :text => "#{base_title} About Us")
     end
@@ -56,12 +52,12 @@ describe "Static Pages Tests: " do
  describe "Contact Us page" do
 
     it "should have the h1 'SubConTraX Contact Us'" do
-      visit '/static_pages/contact'
+      visit contact_path
       page.should have_selector('h1', :text => 'SubConTraX Contact Us')
     end
 
    it "should have the right title" do
-      visit '/static_pages/contact'
+      visit contact_path
       page.should have_selector('title',
                         :text => "#{base_title} Contact Us")
     end
