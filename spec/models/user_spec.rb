@@ -75,6 +75,20 @@ describe User do
       end
   end
 
+  describe "when email is not all in lowercase" do
+    before do
+      @user.email = "EmailWithUpperCaseChars@test.com"
+      @user.save
+    end
+
+    it "should be saved in lowercase" do
+      lowercase_email = @user.email.downcase
+      lowercase_email.should match @user.email
+    end
+
+  end
+
+
   describe "when password is not present" do
     before { @user.password = @user.password_confirmation = " " }
     it { should_not be_valid }
