@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'bootstrap-sass'
 gem 'pg'
+gem 'bcrypt-ruby', '3.0.1'
 
 group :development, :test do
   gem 'rspec-rails', '2.9.0'
@@ -10,6 +11,7 @@ group :development, :test do
   gem 'growl'
   gem 'guard-spork'
   gem 'spork'
+  gem 'annotate', '~> 2.4.1.beta'
 
 end
 

@@ -1,7 +1,7 @@
 
 development:
   adapter: postgresql
-  database: subcontrax
+  database: subcontrax-dev
   host: localhost
   username: "mark"
   password: "nuni2003"
@@ -9,6 +9,6 @@ development:
 test:
   adapter: postgresql
   host: localhost
-  database: subcontrax
+  database: subcontrax-test
   username: "mark"
   password: "nuni2003"
