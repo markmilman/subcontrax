@@ -6,9 +6,12 @@ development:
   username: "mark"
   password: "nuni2003"
 
-test:
+test: &test
   adapter: postgresql
   host: localhost
   database: subcontrax-test
   username: "mark"
   password: "nuni2003"
+
+cucumber:
+  <<: *test

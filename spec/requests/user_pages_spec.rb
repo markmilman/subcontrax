@@ -30,6 +30,20 @@ describe "User Pages" do
 
       end
 
+      describe "none matching password confirmation" do
+        before do
+          fill_in "Name", with: "Example User"
+          fill_in "Email", with: "user@example.com"
+          fill_in "Password", with: "foobar"
+          fill_in "Confirmation", with: "unmatched"
+        end
+
+        it "should NOT create a user" do
+          expect { click_button submit }.to_not change(User, :count)
+        end
+
+      end
+
     end
 
     describe "with valid information" do
@@ -50,6 +64,8 @@ describe "User Pages" do
 
         it { should have_selector('title', text: user.name) }
         it { should have_selector('div.alert.alert-success', text: 'Welcome') }
+        it { should have_link('Sign out') }
+
       end
     end
 

@@ -34,6 +34,8 @@ group :test do
   gem 'growl'
   gem 'guard-spork'
   gem 'spork'
+  gem 'cucumber-rails', '1.2.1', require: false
+  gem 'database_cleaner', '0.7.0'
 
 end
 
