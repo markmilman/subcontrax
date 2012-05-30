@@ -9,7 +9,8 @@ describe "User Pages" do
 
     # verify the page has the right header and title
     it { should have_selector('h1', text: 'Sign Up') }
-    it { should have_selector('title', text: full_title('Sign Up')) }
+    #it { should have_selector('title', text: full_title('Sign Up')) }
+    it { should have_the_right_title( 'Sign Up')}
 
     describe "with invalid information" do
       it "should not create a user" do
@@ -19,7 +20,7 @@ describe "User Pages" do
       describe "after submission" do
         before { click_button submit }
 
-        it { should have_selector('title', text: 'Sign Up') }
+        it { should have_the_right_title('Sign Up') }
         it { should have_content('error') }
 
         it { should have_content('Name can\'t be blank') }
