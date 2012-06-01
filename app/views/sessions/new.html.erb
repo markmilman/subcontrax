@@ -4,14 +4,14 @@
   <div class="span6 offset3">
     <%= form_tag sessions_path, :class => 'well' do %>
 
-          <%= label_tag :email %>
-          <%= text_field_tag :email, params[:email] %>
+        <%= label_tag :email %>
+        <%= text_field_tag :email, params[:email] %>
 
 
-          <%= label_tag :password %>
-          <%= password_field_tag :password %>
+        <%= label_tag :password %>
+        <%= password_field_tag :password %>
         <div>
-        <%= button_tag "Log in", class: "btn btn-primary" %>
+          <%= button_tag "Sign in", class: "btn btn-primary" %>
         </div>
     <% end %>
 

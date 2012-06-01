@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc42c17f-40e3-434a-8ed7-f9b125788e91" name="Default" comment="">
+    <list default="true" id="fc42c17f-40e3-434a-8ed7-f9b125788e91" name="Default" comment="Finished Chapter8">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/user_pages_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/user_pages_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/utilities.rb" afterPath="$PROJECT_DIR$/spec/support/utilities.rb" />
     </list>
     <list id="c0bfd0ad-f253-4faf-a88c-7a42a8fbd9f1" name="Chapter9" comment="" />
     <ignored path="subcontrax.iws" />
@@ -35,28 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="417" selection-end="417" vertical-scroll-proportion="-8.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utilities.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/support/utilities.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="1" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="static_pages_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/requests/static_pages_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="13" column="45" selection-start="495" selection-end="495" vertical-scroll-proportion="-3.4615386">
               <folding />
             </state>
           </provider>
@@ -65,60 +46,61 @@
       <file leaf-file-name="authentication_pages_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/requests/authentication_pages_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="10" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="28" selection-start="370" selection-end="370" vertical-scroll-proportion="0.4710145">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="142" column="6" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="-12.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_pages_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/requests/user_pages_spec.rb">
+      <file leaf-file-name="static_pages.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="20" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="sessions.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/sessions.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <marker date="1338222714000" expanded="true" signature="21:542" placeholder="..." />
-                <marker date="1338222714000" expanded="true" signature="28:244" placeholder="..." />
-                <marker date="1338222714000" expanded="true" signature="251:534" placeholder="..." />
-                <marker date="1338222714000" expanded="true" signature="306:525" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <marker date="1337550409000" expanded="true" signature="61:299" placeholder="..." />
-                <marker date="1337550409000" expanded="true" signature="102:210" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_error_messages.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_error_messages.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="26" selection-start="313" selection-end="313" vertical-scroll-proportion="0.34526855">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sessions_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,15 +125,9 @@
     <option name="myStructureFilterPaths" />
     <option name="myShowTree" value="false" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Rails console: subcontrax" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
         <option value="$PROJECT_DIR$/spec/factories/factories.rb" />
         <option value="$PROJECT_DIR$/spec/requests/authentication_pages_spec.rb" />
@@ -162,9 +138,12 @@
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120528173719_add_remember_token_to_users.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/spec/support/utilities.rb" />
         <option value="$PROJECT_DIR$/spec/requests/user_pages_spec.rb" />
+        <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
       </list>
     </option>
   </component>
@@ -269,155 +248,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="requests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static_pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -478,42 +313,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcontrax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -533,6 +332,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subcontrax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subcontrax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subcontrax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subcontrax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -541,14 +380,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="94" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="102" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="99" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="106" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="900" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="106" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="898" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="900" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="104" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="101" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -562,43 +401,10 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Rails.Test: subcontrax">
-    <configuration default="false" name="User when password doesn't match confirmation" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="subcontrax" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/models/user_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User when password doesn't match confirmation" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="true" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.All specs">
     <configuration default="false" name="User when password confirmation is nil" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="subcontrax" />
@@ -706,6 +512,29 @@
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RSpec: Spork DRb server" type="SporkRunConfigurationType" factoryName="Spork DRb" temporary="true">
+      <module name="subcontrax" />
+      <SPORK_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <SPORK_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <SPORK_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <SPORK_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <SPORK_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <SPORK_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$USER_HOME$/.rvm/gems/ruby-1.9.3-p125@rails3tutorial2ndEd/bin/spork" />
+      <SPORK_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <SPORK_RUN_CONFIG NAME="SPORK_RUN_CONFIG" VALUE="RSPEC" />
+      <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
@@ -834,6 +663,15 @@
         <option name="RakeTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method>
+        <option name="RakeTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -865,15 +703,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method>
-        <option name="RakeTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
       <method>
         <option name="RakeTask" enabled="false" />
       </method>
@@ -1091,11 +920,11 @@
       <item index="5" class="java.lang.String" itemvalue="Rake.test" />
       <item index="6" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="7" class="java.lang.String" itemvalue="Ruby.Unnamed" />
-      <item index="8" class="java.lang.String" itemvalue="RSpec.User when password doesn't match confirmation" />
-      <item index="9" class="java.lang.String" itemvalue="RSpec.User when password confirmation is nil" />
-      <item index="10" class="java.lang.String" itemvalue="RSpec.User Pages Sign-up with invalid information none matching password confirmation" />
-      <item index="11" class="java.lang.String" itemvalue="Query Language Console.Default" />
-      <item index="12" class="java.lang.String" itemvalue="Cucumber.signing_in" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.User when password confirmation is nil" />
+      <item index="9" class="java.lang.String" itemvalue="RSpec.User Pages Sign-up with invalid information none matching password confirmation" />
+      <item index="10" class="java.lang.String" itemvalue="Query Language Console.Default" />
+      <item index="11" class="java.lang.String" itemvalue="Cucumber.signing_in" />
+      <item index="12" class="java.lang.String" itemvalue="Spork DRb.RSpec: Spork DRb server" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -1165,18 +994,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965517" sideWeight="0.49675325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6706056" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827586" sideWeight="0.4935065" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32827586" sideWeight="0.4935065" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827586" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25974026" sideWeight="0.3264402" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2840909" sideWeight="0.6703448" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28977272" sideWeight="0.67172414" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49675325" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827586" sideWeight="0.5008117" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32965517" sideWeight="0.5487013" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965517" sideWeight="0.5487013" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1246,122 +1075,108 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/spec/requests/user_pages_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1338222714000" expanded="true" signature="21:542" placeholder="..." />
-            <marker date="1338222714000" expanded="true" signature="28:244" placeholder="..." />
-            <marker date="1338222714000" expanded="true" signature="251:534" placeholder="..." />
-            <marker date="1338222714000" expanded="true" signature="306:525" placeholder="..." />
-          </folding>
-        </state>
+        <state line="22" column="20" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1337550409000" expanded="true" signature="61:299" placeholder="..." />
-            <marker date="1337550409000" expanded="true" signature="102:210" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.3084577">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="78" selection-start="562" selection-end="596" vertical-scroll-proportion="0.7672634">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125@rails3tutorial2ndEd/gems/activesupport-3.2.3/lib/active_support/callbacks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="408" column="0" selection-start="13443" selection-end="13443" vertical-scroll-proportion="0.25707546">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="2572" selection-end="2572" vertical-scroll-proportion="0.29245284">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_error_messages.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="26" selection-start="313" selection-end="313" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125@rails3tutorial2ndEd/gems/actionpack-3.2.3/lib/action_view/helpers/form_tag_helper.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="415" column="10" selection-start="21849" selection-end="21849" vertical-scroll-proportion="0.31603774">
+        <state line="23" column="21" selection-start="508" selection-end="512" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="15" selection-start="424" selection-end="436" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/requests/authentication_pages_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="10" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="45" selection-start="495" selection-end="495" vertical-scroll-proportion="-3.4615386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="6" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="0.53435117">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/footer.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="9" selection-start="126" selection-end="126" vertical-scroll-proportion="0.2402746">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/sessions.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="486" selection-end="486" vertical-scroll-proportion="0.4698795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p125@rails3tutorial2ndEd/gems/rspec-core-2.9.0/lib/rspec/core/example_group.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="0" selection-start="6644" selection-end="6718" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/utilities.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="1" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
+        <state line="22" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="-12.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="417" selection-end="417" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/requests/static_pages_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/requests/user_pages_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="20" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_error_messages.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="313" selection-end="313" vertical-scroll-proportion="0.34526855">
+        <state line="13" column="28" selection-start="370" selection-end="370" vertical-scroll-proportion="0.4710145">
           <folding />
         </state>
       </provider>
