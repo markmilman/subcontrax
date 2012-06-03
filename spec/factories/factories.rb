@@ -1,9 +1,14 @@
 FactoryGirl.define do
+
   factory :user do
-    name "Michael Hartl"
-    email "michael@example.com"
+    sequence(:name) { |n| "MiYa #{n}" }
+    sequence(:email) { |n| "miya_#{n}@example.com" }
     password "foobar"
     password_confirmation "foobar"
+  end
+
+  factory :admin do
+    admin true
   end
 
   factory :user_unmatched_pwd do
