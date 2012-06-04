@@ -103,7 +103,6 @@ describe User do
 
   end
 
-
   describe "when password is not present" do
     before { @user.password = @user.password_confirmation = " " }
     it { should_not be_valid }
@@ -113,7 +112,6 @@ describe User do
     before { @user.password_confirmation = "mismatch" }
     it { should_not be_valid }
   end
-
 
   describe "return value of authenticate method" do
     before { @user.save }
@@ -136,6 +134,14 @@ describe User do
     end
 
 
+  end
+
+  describe "accessible attributes" do
+    it "should not allow access to admin" do
+      expect do
+        User.new(admin: true)
+      end.should raise_error(ActiveModel::MassAssignmentSecurity::Error)
+    end
   end
 
 end

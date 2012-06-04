@@ -3,19 +3,29 @@ require 'spec_helper'
 
 describe "Static Pages Tests: " do
 
-  let(:app_name) { "SubConTraX" }  
+  let(:app_name) { "SubConTraX" }
 
 
   subject { page }
 
   shared_examples_for "all static pages" do
-    it { should have_selector('h1',    text: heading) }
+    it { should have_selector('h1', text: heading) }
     it { should have_selector('title', text: full_title(page_title)) }
   end
 
-  describe "Home page" do
+  describe "Home page without signing in" do
     before { visit root_path }
-    let(:heading)    { app_name }
+    let(:heading) { app_name }
+    let(:page_title) { 'Welcome' }
+
+    it_should_behave_like "all static pages"
+  end
+
+  describe "Home page when signed in" do
+    let(:user) { FactoryGirl.create(:user) }
+    before { sign_in user }
+    before { visit root_path }
+    let(:heading) { app_name }
     let(:page_title) { 'Home' }
 
     it_should_behave_like "all static pages"
@@ -24,7 +34,7 @@ describe "Static Pages Tests: " do
 
   describe "Help page" do
     before { visit help_path }
-    let(:heading)    { app_name }
+    let(:heading) { app_name }
     let(:page_title) { 'Help' }
 
     it_should_behave_like "all static pages"
@@ -33,16 +43,16 @@ describe "Static Pages Tests: " do
   describe "About page" do
     before { visit about_path }
 
-    let(:heading)    { app_name }
+    let(:heading) { app_name }
     let(:page_title) { 'About' }
 
     it_should_behave_like "all static pages"
-   end
+  end
 
   describe "Contact page" do
     before { visit contact_path }
 
-    let(:heading)    { app_name }
+    let(:heading) { app_name }
     let(:page_title) { 'Contact' }
   end
 
@@ -57,6 +67,6 @@ describe "Static Pages Tests: " do
     visit root_path
     click_link "Sign up now!"
     page.should have_selector 'title', text: full_title('Sign Up')
-   end
+  end
 
 end
