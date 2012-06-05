@@ -17,8 +17,3 @@
 bundler_stubs/
 
 *.DS_Store
-
-# ignore .idea
-/.idea/*.xml
-/.idea/*/*.xml
-/.idea
