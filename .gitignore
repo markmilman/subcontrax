@@ -17,3 +17,6 @@
 bundler_stubs/
 
 *.DS_Store
+
+.idea/workspace.xml
+.idea/tasks.xml
