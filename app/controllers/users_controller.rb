@@ -5,7 +5,13 @@ class UsersController < ApplicationController
   before_filter :admin_user, only: :destroy
 
   def new
-    @user = User.new
+    if !signed_in?
+      @user = User.new
+    else
+      flash[:warning] = "You are already signed up"
+      redirect_to root_path
+    end
+
   end
 
   def show
@@ -13,15 +19,21 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(params[:user])
+    if !signed_in?
+      @user = User.new(params[:user])
 
-    if @user.save
-      sign_in @user
-      flash[:success] = "Welcome to SubConTraX!"
-      redirect_to @user
+      if @user.save
+        sign_in @user
+        flash[:success] = "Welcome to SubConTraX!"
+        redirect_to @user
+      else
+        render 'new'
+      end
     else
-      render 'new'
+      flash[:warning] = "You are already signed up"
+      redirect_to root_path
     end
+
   end
 
   def edit
@@ -44,9 +56,16 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    User.find(params[:id]).destroy
-    flash[:success] = "User deleted."
-    redirect_to users_path
+
+    user = User.find(params[:id]).destroy
+    if current_user != user
+      flash[:success] = "User deleted."
+      redirect_to users_path
+    else
+      flash[:error] = "Invalid action: You can't delete your own user"
+      redirect_to root_path
+
+    end
   end
 
   private
