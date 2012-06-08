@@ -44,6 +44,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+
 }
 
 h1 {
@@ -152,14 +153,58 @@ p {
 /* users index */
 
 .users {
+   list-style: none;
+   margin: 0;
+   li {
+     overflow: auto;
+     padding: 10px 0;
+     border-top: 1px solid $grayLighter;
+     &:last-child {
+       border-bottom: 1px solid $grayLighter;
+     }
+   }
+ }
+
+
+.Alerts {
   list-style: none;
   margin: 0;
   li {
     overflow: auto;
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
-    &:last-child {
-      border-bottom: 1px solid $grayLighter;
-    }
+    border-bottom: 2px solid $grayLighter;
+
   }
 }
+
+.Redalert {
+
+  font-family: "Helvetica";
+  color: #B94A48;
+  background-color: #F2DEDE;
+  margin-bottom: 0px;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05)
+
+}
+
+.Ralert {
+  font-family: "Helvetica";
+  color: #B94A48;
+  font-weight: bold;
+}
+
+.Galert {
+  font-family: "Helvetica";
+  color: #468847;
+  font-weight: bold;
+}
+
+.Balert {
+  background-color: #F2DEDE;
+ ;
+}
+

@@ -7,3 +7,7 @@ body {
 }
 
 @import "bootstrap-responsive";
+
+.nav-list .active > a{
+  background-color: #994433;
+}

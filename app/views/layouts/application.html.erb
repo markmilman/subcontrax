@@ -8,15 +8,66 @@
   <%= render 'layouts/shim' %>
 </head>
 <body>
-<%= render 'layouts/header' %>
-<div class="container">
+ <%= render 'layouts/header' %>
+<div class="container-fluid">
+  <div  class="row-fluid">
+    <div class="span2">
+
+      <div class="well sidebar-nav">
+
+         <ul class="nav nav-list">
+
+           <li class="nav-header">
+             <i class="icon-envelope"></i>
+             Alerts:</li>
+           <li>
+             <a href="#">Transferred Jobs
+             <span class="label label-important">1</span>
+               </a>
+           </li>
+           <li>
+             <a href="#">Incoming Jobs
+               <span class="label label-warning">5</span>
+             </a>
+           </li>
+
+          <li class="nav-header"> <i class="icon-folder-open"></i> Job Tickets</li>
+          <li class="active"><a href="#">Add New Ticket</a></li>
+          <li><a href="#">My Open Tickets</a></li>
+          <li><a href="#">Update Ticket Status</a></li>
+          <li class="nav-header"><i class="icon-user"></i> New Contact</li>
+          <li><a href="#">New Provider</a></li>
+          <li><a href="#">New Subcontractor</a></li>
+          <li><a href="#">New Customer</a></li>
+          <li><a href="#">New Employees</a></li>
+          <li class="nav-header"><i class="icon-list-alt"></i> Misc.</li>
+          <li><a href="#">New Contract</a></li>
+          <li><a href="#">Send SubConTrax Invite</a></li>
+          <li><a href="#">Update Billing</a></li>
+        </ul>
+      </div>
+
+      <ul class="unstyled">
+         <li>
+          <a class="thumbnail" href="#">
+            <img alt="" src="http://placehold.it/250x250">
+          </a>
+        </li>
+       </ul>
+
+    </div>
+
+
+    <div class="span9">
   <% flash.each do |key, value| %>
       <%= content_tag(:div, value, class: "alert alert-#{key}") %>
   <% end %>
   <%= yield %>
+    </div>
+
+</div>
   <%= render 'layouts/footer' %>
   <%= debug(params) if Rails.env.development? %>
-
 </div>
 
 </body>
