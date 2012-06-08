@@ -3,15 +3,15 @@ development:
   adapter: postgresql
   database: subcontrax-dev
   host: localhost
-  username: "postgres"
-  password: "Maxim2012"
+  username: "PLEASE PUT USER NAME HERE"
+  password: "PASSWORD GOES HERE"
 
 test: &test
   adapter: postgresql
   host: localhost
   database: subcontrax-test
-  username: "postgres"
-  password: "Maxim2012"
+  username: "PLEASE PUT USER NAME HERE"
+  password: "PASSWORD GOES HERE"
 
 cucumber:
   <<: *test
