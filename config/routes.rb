@@ -1,5 +1,8 @@
 Subcontrax::Application.routes.draw do
 
+
+  resources :tickets
+
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
 
