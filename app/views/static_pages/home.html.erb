@@ -1,35 +1,14 @@
 <% provide(:title, 'Home') %>
 
-<!--<div class="row">-->
-<!--<div class="span9">-->
-    <!--<div class ="span6">-->
-    <!--<h3> Transferred Job Alerts:</h3>-->
 
-  <!--</div>-->
-  <!--<div class ="span3 offset2">-->
-    <!--<a class="btn btn-large btn-primary" href="#">-->
-      <!--<i class="icon-trash icon-white"></i>-->
-      <!--Dismiss Alerts</a>-->
-  <!--</div>-->
-<!--</div>-->
-<!--</div>-->
-
-<div class="row-fluid">
-  <div class="span9">
+<div class="row-fluid" id="Transferred_Job_Alerts"  >
+  <!--<div class="span9">-->
     <form class="well">
-
 <div class="row">
 <div class ="span4">
 <h3> Transferred Job Alerts:</h3>
-
-</div>
-<div class ="span3 offset3">
-<a class="btn btn-large btn-primary" href="#">
-<i class="icon-trash icon-white"></i>
-Dismiss Alerts</a>
 </div>
 </div>
-
 <table class="table table-striped">
 <thead>
 <tr>
@@ -37,8 +16,7 @@ Dismiss Alerts</a>
 <th>Job Ticket</th>
 <th class="span3" >
  <i class="icon-trash"></i>
- Select to Dismiss
-
+ Click to Dismiss
 </th>
 </tr>
 </thead>
@@ -46,17 +24,28 @@ Dismiss Alerts</a>
 <tr>
 <td class="Ralert">Rejected!</td>
 <td><a href="/">Lockout, 412 main St, NY.</a></td>
-<td><input type="checkbox"></td>
+<td>
+  <span class="label label-info">
+                  <a href="/" style="color: #ffffff;">Dismiss</a>
+                  </span>
+</td>
 </tr>
 <tr>
 <td class="Galert">Done!</td>
 <td><a href="/">Lockout, 33 Green St, NY.</a></td>
-<td><input type="checkbox"></td>
+<td>  <span class="label label-info">
+            <a href="/" style="color: #ffffff;"> Dismiss</a>
+                  </span>
+</td>
 </tr>
 <tr>
 <td class="Galert">Done!</td>
 <td><a href="/">Lockout, 56 Red St, NY.</a></td>
-<td><input type="checkbox"></td>
+<td>
+  <span class="label label-info">
+                  <a href="/" style="color: #ffffff;"> Dismiss</a>
+                  </span>
+</td>
 </tr>
 </tbody>
 </table>
@@ -68,65 +57,11 @@ Dismiss Alerts</a>
 </ul>
 </form>
 </div>
-</div>
-
-
-<!--<div class="row-fluid">-->
-<!--<div class="span9">-->
-<!--<div class="well">-->
-<!--<h3> Transferred Job Alerts:</h3>-->
-<!--<div class="Redalert">-->
- <!--<table>-->
-   <!--<tbody>-->
-   <!--<tr>-->
-     <!--<strong> Lockout, 412 main St, NY.      </strong>-->
-   <!--<br>-->
-   <!--</tr>-->
-   <!--<tr>-->
-     <!--<strong> Lockout, 412 main St, NY.      </strong>-->
-   <!--</tr>-->
-   <!--</tbody>-->
- <!--</table>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
 <!--</div>-->
 
-
-<!--<div class="row-fluid">-->
-<!--<div class="span9">-->
-<!--<div class="well">-->
-<!--<p class="lead">Transfered Job Alerts:</p>-->
-
-<!--<div class="alert alert-error">-->
-<!--<button data-dismiss="alert" class="close" type="button">×</button>-->
-<!--<strong>REJECTED!</strong> Lockout, 412 main St, NY.-->
-<!--<a class="btn" href="#">View</a>-->
-<!--<a class="btn" href="#">Dismiss</a>-->
-<!--</div>-->
-
-<!--<div class="alert alert-success">-->
-<!--<button data-dismiss="alert" class="close" type="button">×</button>-->
-<!--<strong>DONE!</strong> Lockout, 12 main St, NY.-->
-<!--<div class="btn-group" >-->
- <!--<button data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></button>-->
- <!--<ul class="dropdown-menu">-->
-   <!--<li><a href="#">View</a></li>-->
-   <!--<li><a href="#">Dismiss</a></li>-->
-<!--</ul>-->
-<!--</div>-->
-
-<!--</div>-->
-<!--</li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-
-
-<div class="row-fluid">
-  <div class="span9">
-    <div class="well">
+<div class="row-fluid" id="Incoming_Job_Alerts">
+  <!--<div class="span9">-->
+    <form class="well">
       <div class="block">
         <div class="block_head">
           <div class="bheadl"></div>
@@ -135,13 +70,21 @@ Dismiss Alerts</a>
         </div>
         <div class="block_content">
           <table class="table table-striped table-condensed">
+            <thead>
+            <tr>
+              <th class="span6" >Job Ticket</th>
+              <th class="span2" >Job Type</th>
+            </tr>
+            </thead>
             <tbody>
             <tr>
               <td>
                 <a href="/">Lockout, 412 main St, NY.</a>
               </td>
               <td>
-                <span class="label">Service Call</span>
+                <span class="label">
+                  <a href="/" style="color: #ffffff;">Service Call</a>
+                  </span>
 
               </td>
               </tr>
@@ -173,14 +116,21 @@ Dismiss Alerts</a>
         <div class="bendr"></div>
 
       </div>
+  </form>
   </div>
-  </div>
-</div>
+<!--</div>-->
 
-  <div class="row-fluid">
-  <div class="span9">
-    <div class="well">
-      <h3> Open Tickets:</h3>
+<div class="row-fluid" id="Open_Tickets">
+  <!--<div class="span9">-->
+    <form class="well">
+      <div class="row">
+        <div class="span5">
+        <h3> Open Tickets:</h3>
+        </div>
+        <div class="span4">
+        <%= link_to "Add New Ticket", signup_path, class: "btn btn-primary" %>
+      </div>
+      </div>
       <ul class="nav nav-tabs">
         <li class="active">
           <a href="/">Service Calls</a>
@@ -234,124 +184,29 @@ Dismiss Alerts</a>
       </table>
 
 
-    </div>
+    </form>
  </div>
+<!--</div>-->
+
+<div class="row" id="Empty_row">
+  <!--<div class="span9">-->
+</br>
 </div>
+<!--</div>-->
 
-  <div class="row">
-    <div class="span3">
-        <%= link_to "Add New Ticket!", signup_path, class: "btn btn-large btn-primary" %>
-    </div>
-  </div>
-
-<div class="row">
-  </br>
-</div>
-
-<!--
-<div class="row-fluid">
-  <div class="span9">
-    <div class="well">
-
-      <h3>Available classes</h3>
-      <table class="table table-bordered table-striped">
-        <thead>
-        <tr>
-          <th>Name</th>
-          <th>Example</th>
-          <th>Markup</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>
-            Default
-          </td>
-          <td>
-            <span class="badge">1</span>
-          </td>
-          <td>
-            <code>&lt;span class="badge"&gt;1&lt;/span&gt;</code>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Success
-          </td>
-          <td>
-            <span class="badge badge-success">2</span>
-          </td>
-          <td>
-            <code>&lt;span class="badge badge-success"&gt;2&lt;/span&gt;</code>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Warning
-          </td>
-          <td>
-            <span class="badge badge-warning">4</span>
-          </td>
-          <td>
-            <code>&lt;span class="badge badge-warning"&gt;4&lt;/span&gt;</code>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Important
-          </td>
-          <td>
-            <span class="badge badge-important">6</span>
-          </td>
-          <td>
-            <code>&lt;span class="badge badge-important"&gt;6&lt;/span&gt;</code>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Info
-          </td>
-          <td>
-            <span class="badge badge-info">8</span>
-          </td>
-          <td>
-            <code>&lt;span class="badge badge-info"&gt;8&lt;/span&gt;</code>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Inverse
-          </td>
-          <td>
-            <span class="badge badge-inverse">10</span>
-          </td>
-          <td>
-            <code>&lt;span class="badge badge-inverse"&gt;10&lt;/span&gt;</code>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-
-    </div>
-  </div>
-</div>
--->
-
-
-<div class="row-fluid">
-<div class="span9">
-<div class="well">
+<div class="row-fluid" id="New_Ticket">
+ <div class="well">
 <form class="form-horizontal">
 <fieldset>
 <div class="row">
-<div class ="span4">
-<h3>General Information:</h3>
+<div class ="span8">
+<h3>New Ticket:</h3>
 </div>
-<div class ="span2 offset3">
-<a class="btn btn-large btn-primary" href="#">
+<div class ="span2">
+<a class="btn btn-primary" href="#">
 <i class="icon-trash icon-white"></i>
 Cancel</a>
-</div>
+    </div>
 </div>
 
 <div class="control-group">
@@ -359,77 +214,27 @@ Cancel</a>
 <div class="controls">
 <input type="text" class="input-medium search-query">
 <button type="submit" class="btn">Search</button>
-</div>
-</div>
+<button type="submit" class="btn btn-primary">Add New Customer</button>
+  <p class="help-block">Click "Add New Customer" for new customer.</p>
 
+</div>
+</div>
 
 <div class="control-group">
-<label for="select01" class="control-label">Customer Contact</label>
+<label for="select01" class="control-label">Customer Contact:</label>
 <div class="controls">
-<select id="select01">
+<select id="select_Contact">
 <option>201-123-4569</option>
 <option>201-456-7899</option>
 <option>973-569-7894</option>
 </select>
 <button href="#" class="btn btn-primary">Add New Contact</button>
+  <p class="help-block">You can add new Contact info by clicking "Add New Contact".</p>
 </div>
 </div>
-  <div class ="offset1">
-    <a class="btn btn-primary" href="#">Add New Customer</a>
-  </div>
+
 <hr>
 
-
-</fieldset>
-
-<form class="form-horizontal">
-<fieldset>
-<div class="control-group">
-<label for="input01" class="control-label">Text input</label>
-<div class="controls">
-<input type="text" id="input01" class="input-xlarge">
-<p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>
-</div>
-</div>
-<div class="control-group">
-<label for="optionsCheckbox" class="control-label">Checkbox</label>
-<div class="controls">
-<label class="checkbox">
-<input type="checkbox" value="option1" id="optionsCheckbox">
-Option one is this and that&mdash;be sure to include why it's great
-              </label>
-            </div>
-          </div>
-          <div class="control-group">
-            <label for="select01" class="control-label">Select list</label>
-            <div class="controls">
-              <select id="select01">
-                <option>something</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-          </div>
-          <div class="control-group">
-            <label for="multiSelect" class="control-label">Multicon-select</label>
-            <div class="controls">
-              <select id="multiSelect" multiple="multiple">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-          </div>
-          <div class="control-group">
-            <label for="fileInput" class="control-label">File input</label>
-            <div class="controls">
-              <input type="file" id="fileInput" class="input-file">
-            </div>
-          </div>
           <div class="control-group">
             <label for="textarea" class="control-label">Textarea</label>
             <div class="controls">
@@ -441,9 +246,7 @@ Option one is this and that&mdash;be sure to include why it's great
             <button class="btn">Cancel</button>
           </div>
         </fieldset>
-      </form>
-    </form>
 
+    </form>
   </div>
-</div>
 </div>
