@@ -4,6 +4,7 @@ class TicketsController < ApplicationController
   end
 
   def index
+    @tickets = Ticket.paginate(page: params[:page])
   end
 
   def create
