@@ -1,10 +1,13 @@
 <%= provide(:title, 'All Tickets') %>
 <h1>All Tickets</h1>
 
-<%= will_paginate %>
-<ul class="users">
-  <% @tickets.each do |user| %>
-      <%= render @tickets %>
-  <% end %>
+<%= form_tag tickets_path, :method => :get, :remote => true do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    </p>
+<% end %>
+
+<ul class="users" id="tickets">
+
 </ul>
-<%= will_paginate %>

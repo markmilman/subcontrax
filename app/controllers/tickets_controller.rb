@@ -4,7 +4,8 @@ class TicketsController < ApplicationController
   end
 
   def index
-    @tickets = Ticket.paginate(page: params[:page])
+    #@tickets = Ticket.paginate(page: params[:page])
+    @tickets = Ticket.search(params[:search])
   end
 
   def create

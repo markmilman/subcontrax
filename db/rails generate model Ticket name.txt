@@ -1,0 +1,1 @@
+rails generate model Ticket name:string description:string status:integer started_on:datetime customer_id:integer customer_contract_id:integer status:string completed_on:datetime settlement_date:date settlement_status:string type:string  bom_id:integer
