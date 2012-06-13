@@ -15,7 +15,7 @@ describe Micropost do
 
   let(:user) { FactoryGirl.create(:user) }
   before do
-    # This code is wrong!
+
     @micropost = user.microposts.build(content: "Lorem ipsum")
   end
 
