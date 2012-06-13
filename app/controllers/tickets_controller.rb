@@ -38,7 +38,7 @@ class TicketsController < ApplicationController
           redirect_to tickets_path
         end
       end
-      format.js { render :text => "alert('ticket was destroyed')" }
+      format.js { render :js => "$('#delete#{ticket.id}').parent().hide('slow')" }
     end
   end
 end
