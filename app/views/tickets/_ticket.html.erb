@@ -1,5 +1,5 @@
 <li>
   <%= link_to ticket.name, ticket %>
   <%= text_field_tag "Description", ticket.description %>
-  <%= link_to "delete", ticket, method: :delete, confirm: "You sure?" %>
+  <%= link_to "Delete", ticket, method: :delete, confirm: "You sure?", remote: true %>
 </li>
