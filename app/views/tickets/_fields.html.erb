@@ -12,7 +12,7 @@
 <%= f.label :completed_on %>
 <%= f.text_field :completed_on %>
 <%= f.label :settlement_date %>
-<%= f.text_field :settlement_date %>
+<%= f.text_field :settlement_date, data: {behaviour: 'datepicker'} %>
 
 
-<!--:bom_id, , :customer_contract_id, :customer_id, :description, :name,  :settlement_status, :started_on, :status, :status-->,
+<!--:bom_id, , :customer_contract_id, :customer_id, :description, :name,  :settlement_status, :started_on, :status, :status-->

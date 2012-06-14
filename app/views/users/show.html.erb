@@ -8,4 +8,18 @@
       </h1>
     </section>
   </aside>
+  <div class="row">
+    <div></div>
+    <aside class="span8">
+      <section>
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+  </div>
+
+  <div class="span8">
+    <h3>Micropost Feed (<%= @user.microposts.count %>)</h3>
+    <%= render 'shared/feed' %>
+  </div>
+
 </div>

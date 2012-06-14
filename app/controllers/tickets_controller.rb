@@ -25,5 +25,20 @@ class TicketsController < ApplicationController
   end
 
   def destroy
+
+    ticket = Ticket.find(params[:id]).destroy
+
+    respond_to do |format|
+      format.html do
+        if ticket.destroyed?
+          flash[:success] = "Ticket deleted."
+          redirect_to tickets_path
+        else
+          flash[:error] = "Invalid action: ticket was not deleted"
+          redirect_to tickets_path
+        end
+      end
+      format.js { render :js => "$('#delete#{ticket.id}').parent().hide('slow')" }
+    end
   end
 end

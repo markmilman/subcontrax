@@ -1,3 +1,23 @@
+# == Schema Information
+#
+# Table name: tickets
+#
+#  id                   :integer         not null, primary key
+#  name                 :string(255)
+#  description          :string(255)
+#  status               :integer
+#  started_on           :datetime
+#  customer_id          :integer
+#  customer_contract_id :integer
+#  completed_on         :datetime
+#  settlement_date      :date
+#  settlement_status    :string(255)
+#  type                 :string(255)
+#  bom_id               :integer
+#  created_at           :datetime        not null
+#  updated_at           :datetime        not null
+#
+
 class Ticket < ActiveRecord::Base
   attr_accessible :completed_on,
                   :description,
@@ -7,6 +27,13 @@ class Ticket < ActiveRecord::Base
                   :started_on,
                   :status,
                   :type
+
+  attr_accessor :destroyed
+  after_destroy :mark_as_destroyed
+
+  def mark_as_destroyed
+    self.destroyed = true
+  end
 
 
   def self.select_options
@@ -20,4 +47,5 @@ class Ticket < ActiveRecord::Base
       find(:all)
     end
   end
+
 end

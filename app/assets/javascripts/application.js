@@ -14,4 +14,15 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+//= require bootstrap-datepicker
 
+
+$(document).on("focus", "[data-behaviour~='datepicker']", function (e) {
+    $(this).datepicker({"format":"mm/dd/yyyy", "weekStart":1, "autoclose":true});
+});
+
+//$(document).ready(function() {
+//    $(".deletePost").bind("ajax:success", function() {
+//        $(this).fadeOut();
+//    });
+//});
