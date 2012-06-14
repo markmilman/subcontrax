@@ -16,8 +16,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @microposts = @user.microposts.paginate(page: params[:page])
+    @microposts = @user.microposts.paginate(page: params[:page], per_page: 5)
     @micropost = @user.microposts.build if signed_in?
+    @feed_items = @user.feed.paginate(page: params[:page])
 
   end
 
@@ -70,6 +71,7 @@ class UsersController < ApplicationController
 
     end
   end
+
 
   private
 
