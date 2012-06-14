@@ -7,6 +7,7 @@ class StaticPagesController < ApplicationController
     unless signed_in?
       redirect_to welcome_path
     end
+    @tickets = Ticket.all
   end
 
   def help

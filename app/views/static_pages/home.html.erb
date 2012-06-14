@@ -61,7 +61,7 @@
 
 <div class="row-fluid" id="Incoming_Job_Alerts">
   <!--<div class="span9">-->
-    <form class="well">
+    <div class="well">
       <div class="block">
         <div class="block_head">
           <div class="bheadl"></div>
@@ -77,34 +77,18 @@
             </tr>
             </thead>
             <tbody>
+            <% for ticket in @tickets %>
             <tr>
               <td>
-                <a href="/">Lockout, 412 main St, NY.</a>
+                <%= link_to ticket.name, ticket %>
+
               </td>
               <td>
                 <span class="label">Service Call</span>
 
               </td>
               </tr>
-            <tr>
-              <td>
-                <a href="/">Lockout, 12 main St, NY</a>
-              </td>
-              <td>
-                <span class="label">Estimate</span>
-                 </td>
-
-
-            </tr>
-            <tr>
-              <td>
-                <a href="/">Lockout, 412 main St, NY.</a>
-              </td>
-              <td>
-                <span class="label">Service Call</span>
-
-              </td>
-            </tr>
+                <% end %>
             </tbody>
           </table>
 
@@ -114,7 +98,7 @@
         <div class="bendr"></div>
 
       </div>
-  </form>
+  </div>
   </div>
 <!--</div>-->
 

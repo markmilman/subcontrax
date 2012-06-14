@@ -1,4 +1,18 @@
 <%= provide(:title, 'New Ticket') %>
+<h1>New Ticket</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@ticket) do |f| %>
+        <%= render 'fields', f: f %>
+        <div>
+          <%= f.submit "Create", class: "btn btn-large btn-primary" %>
+        </div>
+    <% end %>
+  </div>
+</div>
+
+<%= provide(:title, 'New Ticket') %>
 
 
 <div class="row-fluid" id="New_Ticket">
