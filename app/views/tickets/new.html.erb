@@ -1,13 +1,59 @@
 <%= provide(:title, 'New Ticket') %>
-<h1>New Ticket</h1>
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@ticket) do |f| %>
-        <%= render 'fields', f: f %>
-        <div>
-          <%= f.submit "Create", class: "btn btn-large btn-primary" %>
+
+<div class="row-fluid" id="New_Ticket">
+  <div class="well">
+    <form class="form-horizontal">
+      <fieldset>
+        <div class="row">
+          <div class ="span8">
+            <h3>New Ticket:</h3>
+          </div>
+          <div class ="span2">
+            <a class="btn btn-primary" href="#">
+              <i class="icon-trash icon-white"></i>
+              Cancel</a>
+          </div>
         </div>
-    <% end %>
+
+        <div class="control-group">
+          <label for="CustomerName" class="control-label">Customer Name: </label>
+          <div class="controls">
+            <input type="text" class="input-medium search-query">
+            <button type="submit" class="btn">Search</button>
+            <button type="submit" class="btn btn-primary">Add New Customer</button>
+            <p class="help-block">Click "Add New Customer" for new customer.</p>
+
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="select01" class="control-label">Customer Contact:</label>
+          <div class="controls">
+            <select id="select_Contact">
+              <option>201-123-4569</option>
+              <option>201-456-7899</option>
+              <option>973-569-7894</option>
+            </select>
+            <button href="#" class="btn btn-primary">Add New Contact</button>
+            <p class="help-block">You can add new Contact info by clicking "Add New Contact".</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="control-group">
+          <label for="textarea" class="control-label">Textarea</label>
+          <div class="controls">
+            <textarea rows="3" id="textarea" class="input-xlarge"></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Save changes</button>
+          <button class="btn">Cancel</button>
+        </div>
+      </fieldset>
+
+    </form>
   </div>
 </div>

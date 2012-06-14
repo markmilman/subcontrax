@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(:version => 20120609014549) do
 
   create_table "microposts", :force => true do |t|
-    t.string "content"
-    t.integer "user_id"
+    t.string   "content"
+    t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -23,29 +23,29 @@ ActiveRecord::Schema.define(:version => 20120609014549) do
   add_index "microposts", ["user_id", "created_at"], :name => "index_microposts_on_user_id_and_created_at"
 
   create_table "tickets", :force => true do |t|
-    t.string "name"
-    t.string "description"
-    t.integer "status"
+    t.string   "name"
+    t.string   "description"
+    t.integer  "status"
     t.datetime "started_on"
-    t.integer "customer_id"
-    t.integer "customer_contract_id"
+    t.integer  "customer_id"
+    t.integer  "customer_contract_id"
     t.datetime "completed_on"
-    t.date "settlement_date"
-    t.string "settlement_status"
-    t.string "type"
-    t.integer "bom_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.date     "settlement_date"
+    t.string   "settlement_status"
+    t.string   "type"
+    t.integer  "bom_id"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
   end
 
   create_table "users", :force => true do |t|
-    t.string "name"
-    t.string "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.string "password_digest"
-    t.string "remember_token"
-    t.boolean "admin", :default => false
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.string   "password_digest"
+    t.string   "remember_token"
+    t.boolean  "admin",           :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
