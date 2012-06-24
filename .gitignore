@@ -21,3 +21,4 @@ bundler_stubs/
 # RubyMine idea files to ignore
 .idea/workspace.xml
 .idea/tasks.xml
+/nbproject/private/

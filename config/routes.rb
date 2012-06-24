@@ -1,10 +1,23 @@
 Subcontrax::Application.routes.draw do
 
 
+  get "relationships/create"
+
+  get "relationships/destroy"
+
   resources :tickets
-  resources :users
+  resources :service_calls, :controller => "tickets", :type => "ServiceCall"
+  resources :opportunities, :controller => "tickets", :type => "Opportunity"
+
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
+
   resources :microposts, only: [:create, :destroy]
   resources :sessions, only: [:new, :create, :destroy]
+  resources :relationships, only: [:create, :destroy]
 
   root to: 'static_pages#home'
 

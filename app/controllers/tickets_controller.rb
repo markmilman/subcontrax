@@ -1,4 +1,6 @@
 class TicketsController < ApplicationController
+  before_filter :signed_in_user
+
   def new
     @ticket = Ticket.new
   end
@@ -9,7 +11,11 @@ class TicketsController < ApplicationController
   end
 
   def create
-    @ticket = Ticket.new(params[:ticket])
+    if params[:type] == ServiceCall.class
+      @ticket = ServiceCall.new(params[:ticket])
+    else
+      @ticket = Opportunity.new(params[:ticket])
+    end
     if @ticket.save
       flash[:success] = "Ticket was created successfully"
       redirect_to @ticket
