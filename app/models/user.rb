@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
   has_secure_password
 
   has_many :microposts, dependent: :destroy
+  belongs_to :organization
 
   # relationships is the table tha holds the link between a user and its followers and the users it follows
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy, class_name: "Relationship"
@@ -25,22 +26,22 @@ class User < ActiveRecord::Base
   # the reverse relationship is a symbol creating a form of a virtual table that will allow the creation of
   # the below followers relationship
   has_many :reverse_relationships, foreign_key: "followed_id",
-           class_name: "Relationship",
-           dependent: :destroy
+           class_name:                          "Relationship",
+           dependent:                           :destroy
   # followers are made available thanks to the reverse relationship virtual table above
   has_many :followers, through: :reverse_relationships, source: :follower
 
 
 # name validation
-  validates :name, {presence: true, length: {maximum: 255}}
+  validates :name, { presence: true, length: { maximum: 255 } }
 
   # email validation
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  validates :email, presence: true, format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
+  validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
 
 
 # password validation  
-  validates :password, length: {minimum: 6}
+  validates :password, length: { minimum: 6 }
   validates :password_confirmation, presence: true
   has_secure_password
 

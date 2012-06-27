@@ -1,10 +1,10 @@
 # == Schema Information
 #
-# Table name: tickets
+# Table name: service_calls
 #
 #  id                   :integer         not null, primary key
 #  name                 :string(255)
-#  description          :string(255)
+#  notes                :string(255)
 #  status               :integer
 #  started_on           :datetime
 #  customer_id          :integer
@@ -18,8 +18,8 @@
 #  updated_at           :datetime        not null
 #
 
-require 'spec_helper'
+class ServiceCall < ActiveRecord::Base
+  attr_accessible :completed_on, :name, :notes, :settlement_date, :settlement_status, :started_on, :status, :type
+  belongs_to :customer
 
-describe Ticket do
-  pending "add some examples to (or delete) #{__FILE__}"
 end

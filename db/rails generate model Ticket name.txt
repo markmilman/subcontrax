@@ -1,1 +1,8 @@
 rails generate model Ticket name:string description:string status:integer started_on:datetime customer_id:integer customer_contract_id:integer status:string completed_on:datetime settlement_date:date settlement_status:string type:string  bom_id:integer
+
+rails generate model ServiceCall name:string notes:string status:integer started_on:datetime customer_id:integer customer_contract_id:integer status:string completed_on:datetime settlement_date:date settlement_status:string type:string  bom_id:integer
+
+rails generate model Customer name:string telephone:string owner_id:integer organization_id:integer company:string address1:string address2:string city:string state:string zip:string country:string phone:string mobile_phone:string work_phone:string email:string billing_status:integer
+
+rails generate model Organization name:string telephone:string website:string company:string address1:string address2:string city:string state:string zip:string country:string mobile:string work_phone:string email:string subcontrax_member:boolean status:integer
+

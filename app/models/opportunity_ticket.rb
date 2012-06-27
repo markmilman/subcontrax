@@ -1,3 +1,0 @@
-class Opportunity < Ticket
-
-end

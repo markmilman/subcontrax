@@ -11,7 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120614190734) do
+ActiveRecord::Schema.define(:version => 20120627022417) do
+
+  create_table "customers", :force => true do |t|
+    t.string "name"
+    t.string "telephone"
+    t.integer "owner_id"
+    t.integer "organization_id"
+    t.string "company"
+    t.string "address1"
+    t.string "address2"
+    t.string "city"
+    t.string "state"
+    t.integer "zip"
+    t.string "country"
+    t.string "phone"
+    t.string "mobile_phone"
+    t.string "work_phone"
+    t.string "email"
+    t.integer "billing_status"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "microposts", :force => true do |t|
     t.string "content"
@@ -22,9 +43,45 @@ ActiveRecord::Schema.define(:version => 20120614190734) do
 
   add_index "microposts", ["user_id", "created_at"], :name => "index_microposts_on_user_id_and_created_at"
 
+  create_table "organizations", :force => true do |t|
+    t.string "name"
+    t.string "telephone"
+    t.string "website"
+    t.string "company"
+    t.string "address1"
+    t.string "address2"
+    t.string "city"
+    t.string "state"
+    t.string "zip"
+    t.string "country"
+    t.string "mobile"
+    t.string "work_phone"
+    t.string "email"
+    t.boolean "subcontrax_member"
+    t.integer "status"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "relationships", :force => true do |t|
     t.integer "follower_id"
     t.integer "followed_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "service_calls", :force => true do |t|
+    t.string "name"
+    t.string "notes"
+    t.integer "status"
+    t.datetime "started_on"
+    t.integer "customer_id"
+    t.integer "customer_contract_id"
+    t.datetime "completed_on"
+    t.date "settlement_date"
+    t.string "settlement_status"
+    t.string "type"
+    t.integer "bom_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

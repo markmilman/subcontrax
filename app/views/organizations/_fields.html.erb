@@ -1,0 +1,47 @@
+<!--#  id                :integer         not null, primary key-->
+<!--#  name              :string(255)-->
+<!--#  telephone         :string(255)-->
+<!--#  website           :string(255)-->
+<!--#  company           :string(255)-->
+<!--#  address1          :string(255)-->
+<!--#  address2          :string(255)-->
+<!--#  city              :string(255)-->
+<!--#  state             :string(255)-->
+<!--#  zip               :string(255)-->
+<!--#  country           :string(255)-->
+<!--#  mobile            :string(255)-->
+<!--#  work_phone        :string(255)-->
+<!--#  email             :string(255)-->
+<!--#  subcontrax_member :boolean-->
+<!--#  status            :integer-->
+<!--#  created_at        :datetime        not null-->
+<!--#  updated_at        :datetime        not null-->
+<!--#-->
+
+<%= render 'shared/error_messages', object: f.object %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :company %>
+<%= f.telephone_field :company %>
+
+<%= f.label :telephone %>
+<%= f.telephone_field :telephone %>
+
+<%= f.label :website %>
+<%= f.url_field :website %>
+
+<%= f.label :address1 %>
+<%= f.text_field :address1 %>
+
+<%= f.label :address2 %>
+<%= f.text_field :address2 %>
+
+<%= f.label :country %>
+<%= f.country_select :country, { priority: %w[US] }, prompt: 'Please select a country' %>
+
+<%= render partial: 'shared/subregion_select' %>
+
+
+

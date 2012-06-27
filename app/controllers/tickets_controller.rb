@@ -47,4 +47,8 @@ class TicketsController < ApplicationController
       format.js { render :js => "$('#delete#{ticket.id}').parent().hide('slow')" }
     end
   end
+
+  def get_options
+    @ticket.select_options
+  end
 end

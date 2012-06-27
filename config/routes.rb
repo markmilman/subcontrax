@@ -1,13 +1,9 @@
 Subcontrax::Application.routes.draw do
 
-
-  get "relationships/create"
-
-  get "relationships/destroy"
-
-  resources :tickets
-  resources :service_calls, :controller => "tickets", :type => "ServiceCall"
-  resources :opportunities, :controller => "tickets", :type => "Opportunity"
+  get '/organizations/subregion_options' => 'organizations#subregion_options'
+  resources :service_calls, only: [:new, :create, :edit, :show, :index]
+  resources :organizations, only: [:new, :create, :edit, :show, :index]
+  resources :customers, only: [:new, :create, :edit, :show, :index]
 
   resources :users do
     member do

@@ -7,12 +7,13 @@
 <%= f.text_field :description %>
 
 <%= f.label :type %>
-<%= f.text_field :type %>
+<%= select :type, "user_id", User.all.collect { |p| [p.name, p.id] }, { :include_blank => true } %>
+
 
 <%= f.label :completed_on %>
-<%= f.text_field :completed_on, placeholder: 'Please click here'%>
+<%= f.text_field :completed_on, placeholder: 'Please click here' %>
 <%= f.label :settlement_date %>
-<%= f.text_field :settlement_date, data: {behaviour: 'datepicker'} %>
+<%= f.text_field :settlement_date, data: { behaviour: 'datepicker' } %>
 
 
 <!--todo sd,fjhsdkjfh-->

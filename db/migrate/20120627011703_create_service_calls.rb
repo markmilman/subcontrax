@@ -1,8 +1,8 @@
-class CreateTickets < ActiveRecord::Migration
+class CreateServiceCalls < ActiveRecord::Migration
   def change
-    create_table :tickets do |t|
+    create_table :service_calls do |t|
       t.string :name
-      t.string :description
+      t.string :notes
       t.integer :status
       t.datetime :started_on
       t.integer :customer_id
