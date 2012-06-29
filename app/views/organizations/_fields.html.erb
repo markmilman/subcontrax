@@ -18,28 +18,18 @@
 <!--#  updated_at        :datetime        not null-->
 <!--#-->
 
-<%= render 'shared/error_messages', object: f.object %>
+<%= f.input :roles %>
 
-<%= f.label :name %>
-<%= f.text_field :name %>
-
-<%= f.label :company %>
-<%= f.telephone_field :company %>
-
-<%= f.label :telephone %>
-<%= f.telephone_field :telephone %>
-
-<%= f.label :website %>
-<%= f.url_field :website %>
-
-<%= f.label :address1 %>
-<%= f.text_field :address1 %>
-
-<%= f.label :address2 %>
-<%= f.text_field :address2 %>
-
+<%= f.input :telephone %>
+<%= f.input :website %>
+<%= f.input :company %>
+<%= f.input :address1 %>
+<%= f.input :address2 %>
 <%= f.label :country %>
 <%= f.country_select :country, { priority: %w[US] }, prompt: 'Please select a country' %>
+
+<%= f.button :submit %>
+
 
 <%= render partial: 'shared/subregion_select' %>
 

@@ -26,4 +26,8 @@ class Organization < ActiveRecord::Base
   attr_accessible :address1, :address2, :city, :company, :country, :email, :mobile, :name, :state, :status, :telephone, :website, :work_phone, :zip
   has_many :users
   has_many :customers
+
+  has_and_belongs_to_many :roles
+
+  validates_presence_of :name
 end

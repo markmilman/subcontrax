@@ -4,6 +4,7 @@ Subcontrax::Application.routes.draw do
   resources :service_calls, only: [:new, :create, :edit, :show, :index]
   resources :organizations, only: [:new, :create, :edit, :show, :index]
   resources :customers, only: [:new, :create, :edit, :show, :index]
+  resources :roles, only: [:new, :create, :edit, :show, :index]
 
   resources :users do
     member do

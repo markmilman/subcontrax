@@ -1,0 +1,10 @@
+<%= provide(:title, 'Roles') %>
+<h1>All Roles</h1>
+
+<%= will_paginate @roles %>
+<ul class="users">
+  <% @roles.each do |role| %>
+      <%= render role %>
+  <% end %>
+</ul>
+<%= will_paginate @roles %>
